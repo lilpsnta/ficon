@@ -1,0 +1,41 @@
+<template>
+	<view class="flex justify-center" >
+		<uni-indexed-list :options="list" :showSelect="false" @click="itemClick" :style="'height:'+scrollH+ 'px;width: 750rpx;background-color:#FFFFFF;'"></uni-indexed-list>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				scrollH: 600,
+				list : []
+			}
+		},
+		onLoad() {
+			// 获取屏幕宽度,设置scroll可滑动高度
+			uni.getSystemInfo({
+				success: res => {
+					this.scrollH = res.windowHeight - uni.upx2px(200)
+					console.log('scrollH : ' + this.scrollH)
+				}
+			})
+			let that = this
+			// 监听事件
+			uni.$on('roadChange', (res) => {
+				console.log('接收参数：' + JSON.stringify(res))
+				that.list = res
+			})
+		},
+		methods: {
+			
+			itemClick : function(e){
+				uni.$emit('roadIndexListSelected', e)
+			}
+		}
+	}
+</script>
+
+<style>
+	
+</style>

@@ -1,0 +1,418 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
+		{
+			"path": "pages/index/index",
+			"style": {
+				"app-plus": {
+					"titleNView": "false",
+					/**
+					"titleNView": {
+						"buttons": [
+							{
+								"fontSrc": "/static/font/iconfont.ttf",
+								"text": "\ue60d",
+								"float": "right",
+								"fontSize": "45rpx",
+								"color": "#FFFFFF"
+							}
+						],
+						"titleText" : "联合矿工",
+						"backgroundColor":"#feb105",
+						"titleColor" : "#FFFFFF",
+						"splitLine": {
+							"color": "#F6F6F6",
+							"height": "1px"
+						}
+					},
+					*/
+					"subNVues": [
+					/**{
+						"id": "index_sub_event",
+						"path": "pages/index/sub_event/sub_event",
+						"style": {
+							"position": "absolute",
+							"dock": "right",
+							"right":"0upx",
+							"top":"450upx",
+							"width": "120upx",
+							"height": "420upx",
+							"background": "transparent"
+						}
+					},*/
+					{
+						"id": "index_sub_indexlist",
+						"path": "pages/index/sub_indexlist/sub_indexlist",
+						"style": {
+							"position": "absolute",
+							"dock": "top",
+							"top":"220upx",
+							"left":"0upx",
+							"height": "100%",
+							"background": "transparent"
+						}
+					}]
+				},
+				"navigationBarTextStyle": "white",
+				"disableScroll": true,
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#feb105"
+			}
+		}, {
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"navigationBarBackgroundColor": "#feb105",
+				"onReachBottomDistance": 50,
+				"navigationBarTextStyle": "#FFFFFF"
+			}
+
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "联合矿工",
+				"navigationBarBackgroundColor": "#feb105",
+				// "backgroundColor": "#FFFFFF",
+				"onReachBottomDistance": 50,
+				"navigationBarTextStyle": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/login/modify_pwd",
+			"style": {
+				"navigationBarTitleText": "找回密码",
+				"navigationBarBackgroundColor": "#feb105",
+				"onReachBottomDistance": 50,
+				"navigationBarTextStyle": "#FFFFFF"
+			}
+
+		}, {
+			"path": "pages/login/enter_valid_code",
+			"style": {
+				"navigationBarTitleText": "输入验证码",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/login/reset_pwd",
+			"style": {
+				"navigationBarTitleText": "输入新密码",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/my/modify_name",
+			"style": {
+				"navigationBarTitleText": "修改昵称",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				// "backgroundColor": "#FFFFFF",
+				"onReachBottomDistance": 50,
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置
+							{
+								"text": "保存", //原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize": "30rpx",
+								"color": "#03A305",
+								"name": "baocun"
+							}
+						]
+					}
+				}
+			}
+
+		}, {
+			"path": "pages/my/setting/setting",
+			"style": {
+				"navigationBarTitleText": "设置",
+				"navigationBarBackgroundColor": "#feb105",
+				"onReachBottomDistance": 50,
+				"navigationBarTextStyle": "#FFFFFF"
+			}
+		}, {
+			"path": "pages/my/setting/modify_phone",
+			"style": {
+				"navigationBarTitleText": "修改手机号",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/my/setting/reset_phone",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/my/setting/phone_valid_code",
+			"style": {
+				"navigationBarTitleText": "输入验证码",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/my/setting/modify_pwd",
+			"style": {
+				"navigationBarTitleText": "修改密码",
+				"navigationBarBackgroundColor": "#feb105",
+				"onReachBottomDistance": 50,
+				"navigationBarTextStyle": "#FFFFFF"
+			}
+		}, {
+			"path": "pages/my/setting/reset_pwd",
+			"style": {
+				"navigationBarTitleText": "输入新密码",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/my/setting/pwd_vaild_code",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/my/message",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				// "backgroundColor": "#FFFFFF",
+				"onReachBottomDistance": 50,
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"titleNView": {
+
+					}
+				}
+			}
+
+		}
+	    ,{
+            "path" : "pages/daka/daka",
+            "style" :                                                                                    
+            {
+				"app-plus":{
+					"titleNView": {
+						"buttons": [
+							{
+								"text": "我的巡查",
+								"float": "right",
+								"fontSize": "32rpx",
+								"color": "#FFFFFF",
+								"width" : "170rpx"
+							}
+						],
+						"titleText" : "巡查打卡",
+						"backgroundColor":"#feb105",
+						"titleColor" : "#FFFFFF",
+						"splitLine": {
+							"color": "#F6F6F6",
+							"height": "1px"
+						}
+					}
+				},
+				"navigationBarTitleText": "巡查打卡",
+				"navigationBarBackgroundColor": "#feb105",
+				"onReachBottomDistance": 50,
+				"navigationBarTextStyle": "#FFFFFF"
+            }
+            
+        },{
+            "path" : "pages/contact/contact",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "人员名录",
+                "navigationBarBackgroundColor": "#feb105",
+                "onReachBottomDistance": 50,
+                "navigationBarTextStyle": "#FFFFFF"
+            }
+            
+        }
+        ,{
+            "path" : "pages/login/register",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "注册新用户",
+                "navigationBarBackgroundColor": "#feb105",
+                "onReachBottomDistance": 50,
+                "navigationBarTextStyle": "#FFFFFF"
+            }
+        }
+        ,{
+            "path" : "pages/daka/event_list",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "事件详情",
+                "navigationBarBackgroundColor": "#feb105",
+                "onReachBottomDistance": 50,
+                "navigationBarTextStyle": "#FFFFFF"
+            }
+            
+        }
+        ,{
+            "path" : "pages/daka/assign",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "指派人员",
+                "navigationBarBackgroundColor": "#feb105",
+                "onReachBottomDistance": 50,
+                "navigationBarTextStyle": "#FFFFFF"
+            }
+            
+        }
+        ,{
+            "path" : "pages/daka/handle",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "事件处理",
+                "navigationBarBackgroundColor": "#feb105",
+                "onReachBottomDistance": 50,
+                "navigationBarTextStyle": "#FFFFFF"
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/notice",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "通知公告",
+                "navigationBarBackgroundColor": "#feb105",
+                "onReachBottomDistance": 50,
+                "navigationBarTextStyle": "#FFFFFF"
+            }
+            
+        }
+        ,{
+            "path" : "pages/daka/my_daka",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的巡查日志",
+                "navigationBarBackgroundColor": "#feb105",
+                "onReachBottomDistance": 50,
+                "navigationBarTextStyle": "#FFFFFF"
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/notice_detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "系统通知",
+                "navigationBarBackgroundColor": "#feb105",
+                "onReachBottomDistance": 50,
+                "navigationBarTextStyle": "#FFFFFF"
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/modify_street",
+            "style" :                                                                                    
+            {	
+                "navigationBarTitleText": "修改所属街道",
+                "navigationBarBackgroundColor": "#feb105",
+                "onReachBottomDistance": 50,
+                "navigationBarTextStyle": "#FFFFFF"
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/my_todo",
+            "style" :                                                                                    
+            {
+				"app-plus":{
+					"titleNView": {
+						"buttons": [
+							{
+								"text": "审批记录",
+								"float": "right",
+								"fontSize": "32rpx",
+								"color": "#FFFFFF",
+								"width" : "170rpx"
+							}
+						],
+						"titleText" : "我的审批",
+						"backgroundColor":"#feb105",
+						"titleColor" : "#FFFFFF",
+						"splitLine": {
+							"color": "#F6F6F6",
+							"height": "1px"
+						}
+					}
+				},
+                "navigationBarTitleText": "我的审批",
+                "navigationBarBackgroundColor": "#feb105",
+                "onReachBottomDistance": 50,
+                "navigationBarTextStyle": "#FFFFFF"
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/my_done_list",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "审批记录",
+                "navigationBarBackgroundColor": "#feb105",
+                "onReachBottomDistance": 50,
+                "navigationBarTextStyle": "#FFFFFF"
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/product_list",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "产品列表",
+                "navigationBarBackgroundColor": "#feb105",
+                "onReachBottomDistance": 50,
+                "navigationBarTextStyle": "#FFFFFF"
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTitleText": "",
+		"navigationBarTextStyle": "black"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#FFFFFF",
+		"backgroundColor": "#f6c004",
+		"borderStyle": "black",
+		"list": [{
+				"iconPath": "static/tabbar/index.png",
+				"selectedIconPath": "static/tabbar/index_selected.png",
+				"iconWidth": "15px",
+				"pagePath": "pages/index/index",
+				"text": "首页"
+			},
+			{
+				"iconPath": "static/tabbar/product.png",
+				"selectedIconPath": "./static/tabbar/product.png",
+				"iconWidth": "15px",
+				"pagePath": "pages/index/product_list",
+				"text": "产品"
+			},
+			
+			{
+				"iconPath": "static/tabbar/my.png",
+				"selectedIconPath": "static/tabbar/my_selected.png",
+				"iconWidth": "15rpx",
+				"pagePath": "pages/my/my",
+				"text": "我的"
+			}
+		]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}

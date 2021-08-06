@@ -1,0 +1,233 @@
+<template>
+
+	<view class="content" style="background-color: #f2f1f6;">
+
+		<uni-nav-bar :fixed="true" statusBar="true"  style="width: 750rpx;" border="0">
+			<block slot="left" >
+			</block>
+			<view slot="default" class="flex flex-row justify-center" style="width: 470rpx;">
+				<text>联合矿工</text>
+			</view>
+			<block slot="right">
+				<view class="flex flex-row align-center" style="height: 65rpx;margin-left:80rpx;" @click="toNotice">
+					<image src="../../static/icon/msg1.png" style="width: 45rpx;height:45rpx;"></image>
+				</view>
+			</block>
+		</uni-nav-bar>
+
+		<!-- 搜索路段 -->
+		<view class="flex flex-row justify-center" style="margin-top:20rpx;">
+			<view style="width: 710rpx;height:370rpx;background: linear-gradient(to right, #f7d72c, #feb103 );border-radius: 20rpx;">
+				<view class="w-100 flex flex-row flex-nowrap justify-center" style="height:30rpx;line-height: 30rpx;margin-top:50rpx;margin-bottom: 20rpx;;">
+					<text style="font-size: 23rpx;">总资产(FIL)</text>
+					<icon class="iconfont icon-shouye" style="margin-left: 10rpx;"></icon>
+				</view>
+				<view class="flex flex-row flex-nowrap justify-center">
+					<text style="font-size: 50rpx;height: 80rpx;line-height: 80rpx;">11.82273923</text>
+				</view>
+				<view class="w-100 flex-row flex-nowrap justify-center" style="margin-top:20rpx;">
+					<view style="width: 155rpx;text-align: right;font-size: 24rpx;padding-right: 20rpx;">昨日收益 </view>
+					<view style="width: 150rpx;text-align: center;font-size: 24rpx;font-weight: bold;">0.000023</view>
+					<view style="width: 155rpx;text-align: left;font-size: 24rpx;padding-left: 20rpx;;">累计收益</view>
+					<view style="width: 150rpx;text-align: center;font-size: 24rpx;font-weight: bold;">0.000213</view>
+				</view>
+				<view class="w-100 flex flex-row flex-nowrap justify-center" style="margin-top: 40rpx;">
+					<view class="flex flex-row justify-end" style="width: 305rpx;padding-right:10rpx;">
+						<button size="mini" style="width:200rpx;font-size: 30rpx;background-color: #fc8b01;color: #FFFFFF;">提币</button>
+					</view>
+					<view class="flex flex-row justify-start" style="width: 305rpx;padding-left: 10rpx;">
+						<button size="mini" style="width:200rpx;font-size: 30rpx;background-color: #FFFFFF;color: #fc8b01;">充币</button>
+					</view>
+				</view>
+			</view>
+		</view>
+		
+		<view class="flex flex-row justify-center flex-wrap" style="margin-top:20rpx;">
+			<view class="flex flex-row flex-nowrap align-center" style="width:710rpx;height: 50rpx;line-height: 50rpx;">
+				<text style="font-size: 36rpx;font-weight: bold;">矿池运营数据</text>
+				<text style="font-size: 24rpx;color: #828282;margin-left: 30rpx;">实时计算收益</text>
+			</view>
+			<view class="flex flex-row flex-nowrap align-center" style="width:710rpx;margin-top:10rpx;
+				border-bottom-color: #fbcc3e;border-bottom-style:solid;border-bottom-width: 7rpx;">
+			</view>
+			<view class="flex felx-row flex-wrap" style="width: 710rpx;height:320rpx;box-shadow: 5px 5px 5px  #cccccc;
+				border-radius: 20rpx;background-color: #FFFFFF;margin-top:20rpx;padding-top:30rpx;">
+				<view class="flex flex-row flex-wrap justify-center align-center kc_item_con" >
+					<view class="kc_item_label">全网总算力</view>
+					<view class="kc_item_content">8.2223EIB</view>
+				</view>
+				<view class="flex flex-row flex-wrap justify-center align-center kc_item_con" >
+					<view class="kc_item_label">联合矿池总算力</view>
+					<view class="kc_item_content">54.234PIB</view>
+				</view>
+				<view class="flex flex-row flex-wrap justify-center align-center kc_item_con" >
+					<view class="kc_item_label">24h平均算力收益</view>
+					<view class="kc_item_content">0.0234FIL/T</view>
+				</view>
+				<view class="flex flex-row flex-wrap justify-center align-center kc_item_con" >
+					<view class="kc_item_label">封存质押</view>
+					<view class="kc_item_content">6.0234FIL/T</view>
+				</view>
+				<view class="flex flex-row flex-wrap justify-center align-center kc_item_con" >
+					<view class="kc_item_label">新增封存Gas</view>
+					<view class="kc_item_content">0.0234FIL/T</view>
+				</view>
+				<view class="flex flex-row flex-wrap justify-center align-center kc_item_con" >
+					<view class="kc_item_label">当日FIL价格</view>
+					<view class="kc_item_content">$ 51.21</view>
+				</view>
+			</view>
+		</view>
+		
+		
+		<view class="flex flex-row justify-center flex-wrap" style="margin-top:20rpx;margin-bottom: 30rpx;">
+			<view class="flex flex-row flex-nowrap align-center" style="width:710rpx;height: 50rpx;line-height: 50rpx;">
+				<text style="font-size: 36rpx;font-weight: bold;">产品推荐</text>
+			</view>
+			<view class="flex flex-row flex-nowrap align-center" style="width:710rpx;margin-top:10rpx;
+				border-bottom-color: #14a7ec;border-bottom-style:solid;border-bottom-width: 7rpx;">
+			</view>
+			<view class="flex felx-row flex-wrap" style="width: 710rpx;height:420rpx;box-shadow: 5px 5px 5px  #cccccc;
+				border-radius: 20rpx;background-color: #FFFFFF;margin-top:20rpx;padding-top:30rpx;">
+				<view style="padding-left: 20rpx;">
+					<text>联创独享</text>
+				</view>
+				<view class="w-100 flex flex-row flex-nowrap justify-center" style="margin-top: 40rpx;">
+					<view class="flex flex-row flex-nowrap justify-center" style="width: 710rpx;padding-right:10rpx;height: 60rpx;line-height: 60rpx;">
+						<text style="font-size: 36rpx;font-weight: bold;color: #f3c21d;">2324234.234FIL</text>
+						<text style="font-size: 24rpx;color:#f3c21d;margin-left: 20rpx;">剩余</text>
+					</view>
+				</view>
+				<view class="w-100 flex flex-row flex-nowrap justify-center" style="margin-top: 10rpx;height: 40rpx;line-height: 40rpx;">
+					<view class="flex flex-row justify-start" style="width: 205rpx;">
+						<text style="font-size: 24rpx;">产品周期</text>
+					</view>
+					<view class="flex flex-row justify-end" style="width: 305rpx;padding-left: 10rpx;">
+						<text style="font-size: 24rpx;font-weight: bold;">540天</text>
+					</view>
+				</view>
+				<view class="w-100 flex flex-row flex-nowrap justify-center" style="margin-top: 10rpx;">
+					<view class="flex flex-row justify-start" style="width: 205rpx;">
+						<text style="font-size: 24rpx;">FIL质押价格</text>
+					</view>
+					<view class="flex flex-row justify-end" style="width: 305rpx;padding-left: 10rpx;">
+						<text style="font-size: 24rpx;font-weight: bold;">6.23424243FIL</text>
+					</view>
+				</view>
+				<view class="w-100 flex flex-row flex-nowrap justify-center" style="margin-top: 10rpx;">
+					<view class="flex flex-row justify-start" style="width: 205rpx;">
+						<text style="font-size: 24rpx;">FIL当前币价</text>
+					</view>
+					<view class="flex flex-row justify-end" style="width: 305rpx;padding-left: 10rpx;">
+						<text style="font-size: 24rpx;font-weight: bold;">$51.1</text>
+					</view>
+				</view>
+				<view class="w-100 flex flex-row flex-nowrap justify-center" style="margin-top: 20rpx;">
+					<button size="mini" style="width:300rpx;font-size: 30rpx;
+						background: linear-gradient(to right, #f7d72c, #feb103 );color: #FFFFFF;">产品详情</button>
+				</view>
+			</view>
+			
+			<view class="flex felx-row flex-wrap" style="width: 710rpx;height:420rpx;box-shadow: 5px 5px 5px  #cccccc;
+				border-radius: 20rpx;background-color: #FFFFFF;margin-top:20rpx;padding-top:30rpx;">
+				<view style="padding-left: 20rpx;">
+					<text>联创共享</text>
+				</view>
+				<view class="w-100 flex flex-row flex-nowrap justify-center" style="margin-top: 40rpx;">
+					<view class="flex flex-row flex-nowrap justify-center" style="width: 710rpx;padding-right:10rpx;height: 60rpx;line-height: 60rpx;">
+						<text style="font-size: 36rpx;font-weight: bold;color: #f3c21d;">2324234.234FIL</text>
+						<text style="font-size: 24rpx;color:#f3c21d;margin-left: 20rpx;">剩余</text>
+					</view>
+				</view>
+				<view class="w-100 flex flex-row flex-nowrap justify-center" style="margin-top: 10rpx;height: 40rpx;line-height: 40rpx;">
+					<view class="flex flex-row justify-start" style="width: 205rpx;">
+						<text style="font-size: 24rpx;">产品周期</text>
+					</view>
+					<view class="flex flex-row justify-end" style="width: 305rpx;padding-left: 10rpx;">
+						<text style="font-size: 24rpx;font-weight: bold;">540天</text>
+					</view>
+				</view>
+				<view class="w-100 flex flex-row flex-nowrap justify-center" style="margin-top: 10rpx;">
+					<view class="flex flex-row justify-start" style="width: 205rpx;">
+						<text style="font-size: 24rpx;">FIL质押价格</text>
+					</view>
+					<view class="flex flex-row justify-end" style="width: 305rpx;padding-left: 10rpx;">
+						<text style="font-size: 24rpx;font-weight: bold;">6.23424243FIL</text>
+					</view>
+				</view>
+				<view class="w-100 flex flex-row flex-nowrap justify-center" style="margin-top: 10rpx;">
+					<view class="flex flex-row justify-start" style="width: 205rpx;">
+						<text style="font-size: 24rpx;">FIL当前币价</text>
+					</view>
+					<view class="flex flex-row justify-end" style="width: 305rpx;padding-left: 10rpx;">
+						<text style="font-size: 24rpx;font-weight: bold;">$51.1</text>
+					</view>
+				</view>
+				<view class="w-100 flex flex-row flex-nowrap justify-center" style="margin-top: 20rpx;">
+					<button size="mini" style="width:300rpx;font-size: 30rpx;
+						background: linear-gradient(to right, #f7d72c, #feb103 );color: #FFFFFF;">产品详情</button>
+				</view>
+			</view>
+		</view>
+		
+	</view>
+</template>
+
+<script>
+	
+	let that;
+	import $H from '../../common/request.js'
+
+	export default {
+		components: {},
+		data() {
+			return {
+				
+				scrollH: 600,
+				
+			}
+		},
+		onLoad() {
+			let that = this
+			// 读取token 判断登录状态
+			let token = uni.getStorageSync('token');
+			console.log('进入首页取得token:' + token)
+			if (!token) {
+				//不存在则跳转至登录页
+				uni.reLaunch({
+					url: "/pages/login/login",
+					success: () => {
+						plus.navigator.closeSplashscreen();
+					}
+				})
+			} else {
+				//存在则关闭启动页进入首页
+				plus.navigator.closeSplashscreen();
+			}
+			
+			// 获取屏幕宽度,设置scroll可滑动高度
+			uni.getSystemInfo({
+				success: res => {
+					this.scrollH = res.windowHeight - uni.upx2px(145)
+					console.log('scrollH : ' + this.scrollH)
+				}
+			})
+		   
+		},
+		methods: {
+			
+		}
+	}
+</script>
+<style lang="scss" scoped>
+	.kc_item_con{
+		width: 236rpx;height:140rpx;
+	}
+	
+	.kc_item_label{
+		font-size: 24rpx;color: #6C757D;height: 60rpx;line-height: 60rpx;
+	}
+	.kc_item_content{
+		font-size: 30rpx;font-weight: bold;height: 60rpx;line-height: 60rpx;
+	}
+</style>

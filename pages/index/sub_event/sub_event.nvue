@@ -1,0 +1,82 @@
+<template>
+	<view>
+		<view class="flex flex-column justify-center"
+			style="width: 120rpx;height: 420rpx;background-color: #F6F6F6;opacity: 0.9;border-style: solid;border-width: 0rpx;border-color: #D20A0A;">
+			
+			<view class="flex flex-row flex-wrap justify-center" style="width: 120rpx;height: 130rpx;">
+				<view class="flex justify-center align-center" style="width: 70rpx;height: 70rpx;
+						background-color: #397FFF;border-radius: 50rpx;border-style: solid;border-width: 6rpx;border-color: #FFFFFF;
+						background: linear-gradient(to right, #2e6ad0, #397FFF )" @click="ontabEvent(1)">
+					<text style="font-size:36rpx;color: #FFFFFF;text-align: center;font-weight: bold;padding-right:70rpx;">
+						{{faultEvent}}
+					</text>
+				</view>
+				<view class="flex justify-center align-center" style="width: 120rpx;height: 40rpx;">
+					<text style="font-size: 24rpx;font-weight: bold;color: #397FFF;">事件上报</text>
+				</view>
+			</view>
+
+			<view class="flex flex-row flex-wrap justify-center" style="width: 120rpx;height: 130rpx;">
+				<view class="flex justify-center align-center" style="width: 70rpx;height: 70rpx;text-align: center;
+						background-color: #1AA034;border-radius: 50rpx;border-style: solid;border-width: 6rpx;border-color: #FFFFFF;
+						background: linear-gradient(to right, #168b2b, #1aaa35 )" @click="ontabEvent(2)">
+					<text style="font-size:36rpx;color: #FFFFFF;font-weight: bold;padding-right:70rpx;">
+						{{normalEvent}}
+					</text>
+				</view>
+				<view class="flex justify-center align-center" style="width: 120rpx;height: 40rpx;">
+					<text style="font-size: 24rpx;font-weight: bold;color:#1AA034;">日常巡检</text>
+				</view>
+			</view>
+
+			<view class="flex flex-row flex-wrap justify-center" style="width: 120rpx;height: 130rpx;">
+				<view class="flex justify-center align-center" style="width: 70rpx;height: 70rpx;
+						background-color: #D20A0A;border-radius: 50rpx;border-style: solid;border-width: 6rpx;border-color: #FFFFFF;
+						background: linear-gradient(to right, #D20A0A, #e70909 )" @click="ontabEvent(3)">
+					<text style="font-size:36rpx;color: #FFFFFF;text-align: center;font-weight: bold;padding-right:70rpx;">
+						{{todoEvent}}
+					</text>
+				</view>
+				<view class="flex justify-center align-center" style="width: 120rpx;height: 40rpx;">
+					<text style="font-size: 24rpx;font-weight: bold;color:#D20A0A;">待办事件</text>
+				</view>
+			</view>
+
+		</view>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				faultEvent: 0,
+				normalEvent: 0,
+				todoEvent: 0
+			}
+		},
+		onLoad() {
+			// 监听事件  
+			uni.$on('eventNumChange', (res) => {
+				console.log('接收参数：' + JSON.stringify(res))
+				this.normalEvent = res.normalEvent
+				this.faultEvent = res.faultEvent
+				this.todoEvent = res.todoEvent
+				//this.todoEvent = 12
+			})
+		},
+		methods: {
+
+			ontabEvent: function(index) {
+				console.log(1)
+				uni.navigateTo({
+					url: "/pages/daka/event_list"
+				})
+			}
+		}
+	}
+</script>
+
+<style lang="scss" scoped>
+	
+</style>
