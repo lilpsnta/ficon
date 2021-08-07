@@ -229,7 +229,7 @@
 
 	.btn_reg {
 		border-radius: 10rpx;
-		background: linear-gradient(to right, #3399ff, #3481f5);
+		background: linear-gradient(to right, #f9b825, #feb103);
 		font-size: 33rpx;
 		width: 700rpx;
 		height: 100rpx;
@@ -239,7 +239,7 @@
 
 	.btn_reg_hover {
 		border-radius: 10rpx;
-		background: linear-gradient(to right, #3481f5, #3399ff);
+		background: linear-gradient(to right, #f9b825, #feb103);
 		font-size: 33rpx;
 		width: 700rpx;
 		height: 100rpx;
@@ -249,7 +249,7 @@
 
 	.btn_valid_code {
 		border-radius: 2rpx;
-		background: linear-gradient(to right, #649ff9, #5898f9);
+		background: linear-gradient(to right, #f9b825, #feb103);
 		font-size: 33rpx;
 		width: 280rpx;
 		height: 80rpx;
@@ -260,7 +260,7 @@
 	.btn_valid_code_hover {
 		border-right-radius: 50rpx;
 		
-		background: linear-gradient(to right, #5898f9, #649ff9);
+		background: linear-gradient(to right, #f9b825, #feb103);
 		font-size: 33rpx;
 		width: 280rpx;
 		height: 80rpx;

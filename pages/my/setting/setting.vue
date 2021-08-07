@@ -83,22 +83,22 @@
 	}
 	
 	.btn_reg {
-		border-radius: 10rpx;
-		background: linear-gradient(to right, #3399ff, #3481f5);
+		border-radius: 50rpx;
+		background: linear-gradient(to right, #f9b825, #feb103);
 		font-size: 33rpx;
 		width: 700rpx;
-		height: 100rpx;
-		line-height: 100rpx;
+		height: 80rpx;
+		line-height: 80rpx;
 		color: #FFFFFF;
 	}
 	
 	.btn_reg_hover {
-		border-radius: 10rpx;
-		background: linear-gradient(to right, #3481f5, #3399ff);
+		border-radius: 50rpx;
+		background: linear-gradient(to right, #feb103, #f9b825);
 		font-size: 33rpx;
 		width: 700rpx;
-		height: 100rpx;
-		line-height: 100rpx;
+		height: 80rpx;
+		line-height: 80rpx;
 		color: #FFFFFF;
 	}
 </style>

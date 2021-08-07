@@ -186,28 +186,28 @@
 	}
 
 	.btn_reg {
-		border-radius: 10rpx;
-		background: linear-gradient(to right, #3399ff, #3481f5);
+		border-radius: 50rpx;
+		background: linear-gradient(to right, #f9b825, #feb103);
 		font-size: 33rpx;
 		width: 700rpx;
-		height: 100rpx;
+		height: 80rpx;
 		line-height: 100rpx;
 		color: #FFFFFF;
 	}
 
 	.btn_reg_hover {
-		border-radius: 10rpx;
-		background: linear-gradient(to right, #3481f5, #3399ff);
+		border-radius: 50rpx;
+		background: linear-gradient(to right, #feb103, #f9b825);
 		font-size: 33rpx;
 		width: 700rpx;
-		height: 100rpx;
+		height: 80rpx;
 		line-height: 100rpx;
 		color: #FFFFFF;
 	}
 
 	.btn_valid_code {
 		border-radius: 2rpx;
-		background: linear-gradient(to right, #649ff9, #5898f9);
+		background: linear-gradient(to right, #f9b825, #feb103);
 		font-size: 33rpx;
 		width: 280rpx;
 		height: 95rpx;
@@ -217,7 +217,7 @@
 
 	.btn_valid_code_hover {
 		border-radius: 2rpx;
-		background: linear-gradient(to right, #5898f9, #649ff9);
+		background: linear-gradient(to right, #feb103, #f9b825);
 		font-size: 33rpx;
 		width: 280rpx;
 		height: 95rpx;

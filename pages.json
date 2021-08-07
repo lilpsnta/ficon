@@ -5,53 +5,7 @@
 			"path": "pages/index/index",
 			"style": {
 				"app-plus": {
-					"titleNView": "false",
-					/**
-					"titleNView": {
-						"buttons": [
-							{
-								"fontSrc": "/static/font/iconfont.ttf",
-								"text": "\ue60d",
-								"float": "right",
-								"fontSize": "45rpx",
-								"color": "#FFFFFF"
-							}
-						],
-						"titleText" : "联合矿工",
-						"backgroundColor":"#feb105",
-						"titleColor" : "#FFFFFF",
-						"splitLine": {
-							"color": "#F6F6F6",
-							"height": "1px"
-						}
-					},
-					*/
-					"subNVues": [
-					/**{
-						"id": "index_sub_event",
-						"path": "pages/index/sub_event/sub_event",
-						"style": {
-							"position": "absolute",
-							"dock": "right",
-							"right":"0upx",
-							"top":"450upx",
-							"width": "120upx",
-							"height": "420upx",
-							"background": "transparent"
-						}
-					},*/
-					{
-						"id": "index_sub_indexlist",
-						"path": "pages/index/sub_indexlist/sub_indexlist",
-						"style": {
-							"position": "absolute",
-							"dock": "top",
-							"top":"220upx",
-							"left":"0upx",
-							"height": "100%",
-							"background": "transparent"
-						}
-					}]
+					"titleNView": "false"
 				},
 				"navigationBarTextStyle": "white",
 				"disableScroll": true,
@@ -66,7 +20,6 @@
 				"onReachBottomDistance": 50,
 				"navigationBarTextStyle": "#FFFFFF"
 			}
-
 		},
 		{
 			"path": "pages/login/login",
@@ -190,112 +143,7 @@
 			}
 
 		}
-	    ,{
-            "path" : "pages/daka/daka",
-            "style" :                                                                                    
-            {
-				"app-plus":{
-					"titleNView": {
-						"buttons": [
-							{
-								"text": "我的巡查",
-								"float": "right",
-								"fontSize": "32rpx",
-								"color": "#FFFFFF",
-								"width" : "170rpx"
-							}
-						],
-						"titleText" : "巡查打卡",
-						"backgroundColor":"#feb105",
-						"titleColor" : "#FFFFFF",
-						"splitLine": {
-							"color": "#F6F6F6",
-							"height": "1px"
-						}
-					}
-				},
-				"navigationBarTitleText": "巡查打卡",
-				"navigationBarBackgroundColor": "#feb105",
-				"onReachBottomDistance": 50,
-				"navigationBarTextStyle": "#FFFFFF"
-            }
-            
-        },{
-            "path" : "pages/contact/contact",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "人员名录",
-                "navigationBarBackgroundColor": "#feb105",
-                "onReachBottomDistance": 50,
-                "navigationBarTextStyle": "#FFFFFF"
-            }
-            
-        }
-        ,{
-            "path" : "pages/login/register",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "注册新用户",
-                "navigationBarBackgroundColor": "#feb105",
-                "onReachBottomDistance": 50,
-                "navigationBarTextStyle": "#FFFFFF"
-            }
-        }
-        ,{
-            "path" : "pages/daka/event_list",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "事件详情",
-                "navigationBarBackgroundColor": "#feb105",
-                "onReachBottomDistance": 50,
-                "navigationBarTextStyle": "#FFFFFF"
-            }
-            
-        }
-        ,{
-            "path" : "pages/daka/assign",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "指派人员",
-                "navigationBarBackgroundColor": "#feb105",
-                "onReachBottomDistance": 50,
-                "navigationBarTextStyle": "#FFFFFF"
-            }
-            
-        }
-        ,{
-            "path" : "pages/daka/handle",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "事件处理",
-                "navigationBarBackgroundColor": "#feb105",
-                "onReachBottomDistance": 50,
-                "navigationBarTextStyle": "#FFFFFF"
-            }
-            
-        }
-        ,{
-            "path" : "pages/my/notice",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "通知公告",
-                "navigationBarBackgroundColor": "#feb105",
-                "onReachBottomDistance": 50,
-                "navigationBarTextStyle": "#FFFFFF"
-            }
-            
-        }
-        ,{
-            "path" : "pages/daka/my_daka",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "我的巡查日志",
-                "navigationBarBackgroundColor": "#feb105",
-                "onReachBottomDistance": 50,
-                "navigationBarTextStyle": "#FFFFFF"
-            }
-            
-        }
+		
         ,{
             "path" : "pages/my/notice_detail",
             "style" :                                                                                    
@@ -390,7 +238,7 @@
 			},
 			{
 				"iconPath": "static/tabbar/product.png",
-				"selectedIconPath": "./static/tabbar/product.png",
+				"selectedIconPath": "./static/tabbar/prouct_selected.png",
 				"iconWidth": "15px",
 				"pagePath": "pages/index/product_list",
 				"text": "产品"
